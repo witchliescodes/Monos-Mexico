@@ -1,0 +1,32 @@
+[
+  {
+    "ContainingType": "UNAM.PrimatesApi.Controllers.PrimateController",
+    "Method": "Get",
+    "RelativePath": "api/Primate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UNAM.PrimatesApi.Controllers.PrimateController",
+    "Method": "Post",
+    "RelativePath": "api/Primate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UNAM.PrimatesApi.Controllers.PrimateController",
+    "Method": "Put",
+    "RelativePath": "api/Primate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
