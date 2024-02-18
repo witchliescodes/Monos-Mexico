@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Desarrollo\\Titulaci\u00F3n\\Repo\\Monos-Mexico\\Codigo\\BackEnd\\Solucion\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3E56F071-2AF8-4329-85A0-340AC078CEA8}|App\\Unam.primatesApi\\Unam.primatesApi.csproj|d:\\desarrollo\\titulaci\u00F3n\\repo\\monos-mexico\\codigo\\backend\\solucion\\app\\unam.primatesapi\\controllers\\primatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E56F071-2AF8-4329-85A0-340AC078CEA8}|App\\Unam.primatesApi\\Unam.primatesApi.csproj|solutionrelative:app\\unam.primatesapi\\controllers\\primatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,19 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PrimateController.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\Titulaci\u00F3n\\Repo\\Monos-Mexico\\Codigo\\BackEnd\\Solucion\\App\\Unam.primatesApi\\Controllers\\PrimateController.cs",
-              "RelativeDocumentMoniker": "App\\Unam.primatesApi\\Controllers\\PrimateController.cs",
-              "ToolTip": "D:\\Desarrollo\\Titulaci\u00F3n\\Repo\\Monos-Mexico\\Codigo\\BackEnd\\Solucion\\App\\Unam.primatesApi\\Controllers\\PrimateController.cs",
-              "RelativeToolTip": "App\\Unam.primatesApi\\Controllers\\PrimateController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAqwA0AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T23:13:56.713Z",
-              "EditorCaption": ""
             }
           ]
         }

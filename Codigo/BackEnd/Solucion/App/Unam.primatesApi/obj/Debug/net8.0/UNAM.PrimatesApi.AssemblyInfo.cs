@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UNAM.PrimatesApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13d7b706084eadbff7155ca6e062caec42462fb3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8794e290e5c73a3ad7acb7d766d8a5ef25ebb891")]
 [assembly: System.Reflection.AssemblyProductAttribute("UNAM.PrimatesApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UNAM.PrimatesApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
