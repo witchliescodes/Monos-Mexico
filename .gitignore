@@ -5,3 +5,6 @@
 /.vs/slnx.sqlite
 /.vs/ProjectSettings.json
 /.vs/Monos-Mexico/FileContentIndex
+bin
+obj
+packages
