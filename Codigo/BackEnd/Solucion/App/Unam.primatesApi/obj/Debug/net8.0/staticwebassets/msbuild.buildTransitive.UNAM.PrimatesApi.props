@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\UNAM.PrimatesApi.props" />
-</Project>
