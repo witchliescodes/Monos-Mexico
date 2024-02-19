@@ -1,1 +1,49 @@
+:root {
+  --fondo1: #132a13;
+  --fondo2: #5b6e5b;
+  --fondo3: #5b6e5b63;
+  --acento1: #4f772d;
+  --acento2: #90a955;
+  --fuente1: "Calibri";
+  --fuete2: "Arial";
+  --colortexto: #f5f5f5;
+  --radio: 10px;
+  --tamaño1: 1em;
+  --ltitulo: 3em;
+  --espaciado: 20px;
+}
+
+::-moz-selection {
+  background: var(--acento2);
+}
+a {
+  text-decoration: none !important;
+  color: var(--colortexto);
+  transition: all 400ms ease-in-out;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: none !important;
+  color: var(--acento1);
+}
+*::selection {
+  background: var(--acento2);
+  color: var(--colortexto);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo1);
+  background-image: url("https://live.staticflickr.com/7315/11654973793_008e9f49bd_b.jpg");
+  font: 800 13px var(--fuente1);
+  color: var(--colortexto);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* You can add global styles to this file, and also import other style files */
