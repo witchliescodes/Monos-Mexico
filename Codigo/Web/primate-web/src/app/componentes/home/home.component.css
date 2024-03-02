@@ -1,0 +1,99 @@
+:root {
+  --fondo1: #132a13;
+  --fondo2: #5b6e5b;
+  --fondo3: #5b6e5b63;
+  --acento1: #4f772d;
+  --acento2: #90a955;
+  --fuente1: "Calibri";
+  --fuete2: "Arial";
+  --colortexto: #f5f5f5;
+  --radio: 10px;
+  --tamaño1: 1em;
+  --ltitulo: 3em;
+  --espaciado: 20px;
+}
+
+.navbar {
+  padding: 10px;
+  width: 98%;
+  height: 60px;
+  margin: 10px;
+  background-color: var(--fondo3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9;
+}
+
+blockquote {
+  width: 98%;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: var(--fondo3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 0 auto;
+}
+
+.iniimagen {
+  width: 98%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.introduccion {
+  width: 60%;
+  height: 40%;
+  padding: 40px;
+  background-color: var(--fondo3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 0 3% 0 0;
+  border-radius: var(--radio);
+}
+
+.introduccion h1 {
+  font-size: var(--ltitulo) !important;
+  font-family: var(--fuente1);
+  text-transform: uppercase;
+  color: var(--acento1);
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: var(--radio);
+  margin: 10px;
+}
+
+.introduccion p {
+  font-size: var(--tamaño1);
+  font-family: var(--fuete2);
+  font-weight: 400;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.introduccion p b {
+  background: var(--acento1);
+  color: var(--colortexto);
+  padding: 3px;
+  border-radius: var(--radio);
+}
+
+.iniimagen img {
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+  border-radius: var(--radio);
+  border: 10px var(--acento1);
+}
