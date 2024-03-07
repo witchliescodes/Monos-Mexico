@@ -1,5 +1,5 @@
 :root {
-  --fondo1: #132a13;
+  --fondo1: #030703;
   --fondo2: #5b6e5b;
   --fondo3: #5b6e5b63;
   --acento1: #4f772d;
@@ -9,7 +9,8 @@
   --colortexto: #f5f5f5;
   --radio: 10px;
   --tamaño1: 1em;
-  --ltitulo: 3em;
+  --ltitulo: 4em;
+  --ltitulo1: 6em;
   --espaciado: 20px;
 }
 
@@ -37,8 +38,7 @@ a:hover {
 }
 
 body {
-  background-color: var(--fondo1);
-  background-image: url("https://live.staticflickr.com/7315/11654973793_008e9f49bd_b.jpg");
+  background: var(--fondo1);
   font: 800 13px var(--fuente1);
   color: var(--colortexto);
   background-position: center;
@@ -47,11 +47,11 @@ body {
 }
 
 /* You can add global styles to this file, and also import other style files */
+/**NAVBAR**/
 
 .navbar {
   padding: 10px;
-  width: 98%;
-  height: 60px;
+  height: auto;
   margin: 10px;
   background-color: var(--fondo3);
   backdrop-filter: blur(10px);
@@ -59,76 +59,256 @@ body {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   z-index: 9;
+  overflow: hidden;
+  position: fixed;
+  top: 10px;
+  width: 98%;
 }
 
-blockquote {
-  width: 98%;
-  padding: 30px;
-  text-align: center;
+.navp,
+.navp p {
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-color: var(--fondo3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 0px !important;
+  transition: all 300ms ease-in-out;
+  flex-flow: column;
 }
 
-.iniimagen {
-  width: 98%;
-  height: auto;
-  margin: 0 auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: transparent;
+.navp p {
+  margin-left: 0.4em !important;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.navp:hover {
+  transition: all 300ms ease-in-out;
+  color: var(--acento1);
+}
+
+.navp i:hover .navp {
+  background-color: var(--acento1);
   padding: 10px;
 }
 
-.introduccion {
-  width: 60%;
-  height: 40%;
-  padding: 40px;
-  background-color: var(--fondo3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  margin: 0 3% 0 0;
+/**CONTENIDO DE LA PAGINA**/
+
+.ptitulo {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Alouatta_pigra_Belize_Zoo_2.jpg/1920px-Alouatta_pigra_Belize_Zoo_2.jpg");
+  background-position: center;
+  background-size: cover;
   border-radius: var(--radio);
-}
-
-.introduccion h1 {
-  font-size: var(--ltitulo) !important;
-  font-family: var(--fuente1);
-  text-transform: uppercase;
-  color: var(--acento1);
-  font-weight: 800;
-  text-align: center;
-  letter-spacing: var(--radio);
-  margin: 10px;
-}
-
-.introduccion p {
-  font-size: var(--tamaño1);
-  font-family: var(--fuete2);
-  font-weight: 400;
-  text-align: justify;
-  line-height: 20px;
-}
-
-.introduccion p b {
-  background: var(--acento1);
-  color: var(--colortexto);
-  padding: 3px;
-  border-radius: var(--radio);
-}
-
-.iniimagen img {
-  width: 40%;
-  height: 40%;
+  margin: 8% 0 20px 0;
+  width: 100%;
+  height: 400px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tit {
+  text-shadow: 1px 1px 1px var(--fondo1);
+  background-color: #90a95552;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--fuete2);
+  font-size: var(--ltitulo);
+  line-height: 1em;
+  text-transform: uppercase;
+  padding: 40px;
+  font-weight: 800;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: var(--radio);
-  border: 10px var(--acento1);
+}
+
+.panora {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: var(--acento2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  border-radius: var(--radio);
+  font-size: 1.3em;
+}
+
+.panora h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+  color: var(--colortexto);
+  letter-spacing: 10px;
+  background-color: var(--acento1);
+  padding: 10px;
+  border-radius: var(--radio);
+  filter: drop-shadow(1px 1px 20px var(--fondo1));
+}
+
+.panora p {
+  z-index: 9;
+}
+
+.panora b {
+  background-color: var(--acento1);
+  color: var(--colortexto);
+  padding: 10px;
+  float: right;
+  border-radius: var(--radio);
+}
+
+.qot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 40px;
+}
+.qot i {
+  font-size: var(--ltitulo1);
+  color: var(--colortexto);
+  filter: drop-shadow(1px 1px 20px var(--acento2));
+}
+
+.efectos h1 {
+  margin: 5% 0 5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--ltitulo);
+  font-weight: 800;
+  letter-spacing: 2px;
+  border-bottom: 10px solid var(--acento1);
+  line-height: 17px;
+}
+
+.factor {
+  background-color: var(--fondo2);
+  height: 400px;
+  overflow: hidden !important;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  border-radius: var(--radio);
+  transition: all 300ms;
+  position: relative;
+}
+
+.factor img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  filter: grayscale(0);
+  transition: 300ms ease-in-out;
+}
+
+.factor:hover img {
+  filter: grayscale(1);
+  transition: 300ms ease-in-out;
+  transform: scale(1.2, 1.2);
+}
+
+.factor:hover .hover1 {
+  opacity: 0;
+  transition: 400ms ease-in-out;
+}
+
+.hover1 {
+  background-color: transparent;
+  height: 400px;
+  width: 390px;
+  position: absolute;
+  border-radius: var(--radio);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: var(--fuente1);
+  transition: 300ms ease-in-out;
+  overflow: hidden;
+  z-index: 9;
+  opacity: 1;
+}
+
+.hover1 h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-family: var(--fuete2);
+  text-align: center;
+  line-height: 15px;
+  background-color: var(--acento1);
+  padding: 10px;
+  border-radius: var(--radio);
+  filter: drop-shadow(1px 1px 3px var(--fondo1));
+  transition: 300ms ease-in-out;
+  max-width: 300px;
+  max-height: 100px;
+}
+
+.factor:hover .hover2 {
+  opacity: 1;
+}
+
+.hover2 {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  opacity: 0;
+  background-color: #293d177c;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: 300ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover2 p {
+  font-size: 1.2em;
+  font-family: var(--fuete2);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.efectos h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+/**FOOTER**/
+
+footer {
+  background-color: var(--acento1);
+  margin-top: 5%;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+.final {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
 }
