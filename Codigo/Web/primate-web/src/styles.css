@@ -293,6 +293,21 @@ body {
   margin: 30px;
 }
 
+.mexico {
+  background-color: var(--fondo2);
+  margin: 10% 0 0 0;
+  border-radius: var(--radio);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mexico .col:nth-child(2) {
+  background: #191f19;
+}
+
 /**FOOTER**/
 
 footer {

@@ -9,6 +9,7 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { PrimatesComponent } from './componentes/primates/primates.component';
+import { AlianzasComponent } from './alianzas/alianzas.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PrimatesComponent } from './componentes/primates/primates.component';
     NavbarComponent,
     HomeComponent,
     LoginComponent,
-    PrimatesComponent
+    PrimatesComponent,
+    AlianzasComponent
   ],
   imports: [
     BrowserModule,
