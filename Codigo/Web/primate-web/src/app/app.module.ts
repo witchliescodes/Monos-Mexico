@@ -9,7 +9,7 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { PrimatesComponent } from './componentes/primates/primates.component';
-import { AlianzasComponent } from './alianzas/alianzas.component';
+//import { AlianzasComponent } from './alianzas/alianzas.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { AlianzasComponent } from './alianzas/alianzas.component';
     HomeComponent,
     LoginComponent,
     PrimatesComponent,
-    AlianzasComponent
+    //AlianzasComponent
   ],
   imports: [
     BrowserModule,
