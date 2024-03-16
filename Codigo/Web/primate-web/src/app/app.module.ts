@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { HomeComponent } from './componentes/home/home.component';
-import { LoginComponent } from './componentes/login/login.component';
 import { PrimatesComponent } from './componentes/primates/primates.component';
+import { GrupoComponent } from './componentes/grupo/grupo.component';
+import { RegistroComponent } from './componentes/registro/registro.component';
+import { ConectarseComponent } from './componentes/conectarse/conectarse.component';
 //import { AlianzasComponent } from './alianzas/alianzas.component';
 
 @NgModule({
@@ -16,17 +17,15 @@ import { PrimatesComponent } from './componentes/primates/primates.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavbarComponent,
     HomeComponent,
-    LoginComponent,
     PrimatesComponent,
+    GrupoComponent,
+    RegistroComponent,
+    ConectarseComponent,
     //AlianzasComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

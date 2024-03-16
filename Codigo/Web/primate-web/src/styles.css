@@ -44,6 +44,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 680));
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -51,51 +52,38 @@ body {
 
 .navbar {
   padding: 10px;
-  height: auto;
   margin: 10px;
-  background-color: var(--fondo3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  z-index: 9;
-  overflow: hidden;
+  z-index: 999;
   position: fixed;
-  top: 10px;
-  width: 98%;
+  width: calc(100% - 20px);
+  font-size: 15px;
 }
 
-.navp,
-.navp p {
+.navbar-nav {
   display: flex;
-  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0px !important;
-  transition: all 300ms ease-in-out;
-  flex-flow: column;
 }
 
-.navp p {
-  margin-left: 0.4em !important;
-  text-transform: uppercase;
-  font-size: 1em;
-  border: none;
-  letter-spacing: 2px;
+.nav-link i {
+  margin-right: 10px;
+  color: var(--colortexto);
+  background-color: var(--acento2);
+  padding: 5px;
+  font-size: 12px;
+  border-radius: var(--radio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.navp:hover {
-  transition: all 300ms ease-in-out;
-  color: var(--acento1);
-}
-
-.navp i:hover .navp {
-  background-color: var(--acento1);
-  padding: 10px;
-}
-
 /**CONTENIDO DE LA PAGINA**/
 
 .ptitulo {
@@ -119,8 +107,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: var(--fuete2);
-  font-size: var(--ltitulo);
+  font-family: var(--fuete2);
+  font-size: 20px;
   line-height: 1em;
   text-transform: uppercase;
   padding: 40px;
@@ -140,12 +128,12 @@ body {
   justify-content: center;
   flex-flow: column;
   border-radius: var(--radio);
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .panora h1 {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 800;
   color: var(--colortexto);
   letter-spacing: 10px;
@@ -157,6 +145,8 @@ body {
 
 .panora p {
   z-index: 9;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .panora b {
@@ -165,6 +155,7 @@ body {
   padding: 10px;
   float: right;
   border-radius: var(--radio);
+  font-size: 12px;
 }
 
 .qot {
@@ -175,7 +166,7 @@ body {
   padding: 40px;
 }
 .qot i {
-  font-size: var(--ltitulo1);
+  font-size: 80px;
   color: var(--colortexto);
   filter: drop-shadow(1px 1px 20px var(--acento2));
 }
@@ -187,7 +178,7 @@ body {
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  font-size: var(--ltitulo);
+  font-size: 80px;
   font-weight: 800;
   letter-spacing: 2px;
   border-bottom: 10px solid var(--acento1);
@@ -241,6 +232,7 @@ body {
   letter-spacing: 1px;
   font-family: var(--fuente1);
   transition: 300ms ease-in-out;
+  font-size: 12px;
   overflow: hidden;
   z-index: 9;
   opacity: 1;
@@ -286,6 +278,7 @@ body {
   font-family: var(--fuete2);
   text-align: center;
   letter-spacing: 1px;
+  font-size: 1.2em;
 }
 
 .efectos h2 {
@@ -295,29 +288,65 @@ body {
 
 .mexico {
   background-color: var(--fondo2);
-  margin: 10% 0 0 0;
+  margin: 5% 0 0 0;
   border-radius: var(--radio);
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.mexico .col:nth-child(1) p {
+  padding: 40px;
 }
 
 .mexico .col:nth-child(2) {
   background: #191f19;
+  height: 100%;
+  padding: 40px;
+}
+
+.mexico .col:nth-child(2) h1 {
+  background-color: #4f772d;
+  padding: 10px;
+  border-radius: var(--radio);
+  margin: 0 0 20px 0;
+  max-width: 400px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mexico .col:nth-child(2) span p {
+  margin: 10px;
+}
+
+.mexico .col:nth-child(2) b {
+  margin: 10px;
+  float: right;
 }
 
 /**FOOTER**/
 
 footer {
-  background-color: var(--acento1);
+  background-color: #191f19;
   margin-top: 5%;
   padding: 40px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex-flow: column;
+}
+
+.partefinal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: calc(100%);
+  margin-top: 30px;
 }
 
 .final {
@@ -325,5 +354,170 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-flow: column;
   width: auto;
+  text-align: left;
 }
+
+.final h2 {
+  font-size: 20px;
+  background-color: var(--acento1);
+  padding: 10px;
+  border-radius: var(--radio);
+  text-transform: uppercase;
+  max-width: 200px;
+}
+
+.final a {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.contacti {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100%);
+}
+
+.linea {
+  width: calc(100%);
+  height: 1px;
+  background-color: var(--acento2);
+  margin: 0 0 20px 0;
+}
+
+.autor {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/**REGISTRO**/
+.registro .register-photo {
+  position: relative;
+  top: 80px;
+  margin-bottom: 10px;
+}
+
+.register-photo {
+  background: var(--acento2);
+  padding: 80px 0;
+}
+
+.register-photo .image-holder {
+  display: table-cell;
+  width: auto;
+  background: url("https://cdn.futura-sciences.com/cdn-cgi/image/width=1920,quality=60,format=auto/sources/images/dossier/1308/13-1308.jpg");
+  background-size: cover;
+}
+
+.register-photo .form-container {
+  display: table;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-photo form {
+  display: table-cell;
+  width: 400px;
+  background-color: #ffffff;
+  padding: 40px 60px;
+  color: #505e6c;
+}
+
+@media (max-width: 991px) {
+  .register-photo form {
+    padding: 40px;
+  }
+}
+
+.register-photo form h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.register-photo form .form-control {
+  background: #f7f9fc;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 6px;
+  height: 40px;
+  margin: 10px;
+}
+
+.register-photo form .form-check {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 10px;
+}
+
+.register-photo form .btn-primary {
+  background: var(--acento1);
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-shadow: none;
+  outline: none !important;
+}
+
+.register-photo form .btn-primary:hover,
+.register-photo form .btn-primary:active {
+  background: var(--fondo1);
+}
+
+.register-photo form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+.register-photo form .already {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/**CONECTARSE**/
+
+.card {
+  background-color: var(--acento2);
+  padding: 40px;
+  top: 80px;
+}
+
+.conect .form-label,
+.conect .col {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.form-check input {
+  width: 20px;
+  height: 20px;
+}
+
+.btn {
+  background-color: var(--acento1);
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--fondo2);
+}
+
+/**Protocolos**/
