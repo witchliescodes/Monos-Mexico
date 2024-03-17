@@ -274,11 +274,10 @@ body {
 }
 
 .hover2 p {
-  font-size: 1.2em;
   font-family: var(--fuete2);
   text-align: center;
   letter-spacing: 1px;
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 
 .efectos h2 {
@@ -520,4 +519,9 @@ footer {
   background-color: var(--fondo2);
 }
 
-/**Protocolos**/
+/**GRUPO**/
+
+.card {
+  width: 18rem;
+  margin: 10px;
+}
