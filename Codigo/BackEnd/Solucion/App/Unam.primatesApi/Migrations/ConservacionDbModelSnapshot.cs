@@ -15,7 +15,7 @@ namespace UNAM.PrimatesApi.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.2");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.3");
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -237,23 +237,6 @@ namespace UNAM.PrimatesApi.Migrations
                     b.ToTable("Documents");
                 });
 
-            modelBuilder.Entity("UNAM.PrimatesApi.Models.RolTenant", b =>
-                {
-                    b.Property<int>("RolId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("Active")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("RolId");
-
-                    b.ToTable("RolTenants");
-                });
-
             modelBuilder.Entity("UNAM.PrimatesApi.Models.UserPrivilege", b =>
                 {
                     b.Property<int>("Id")
@@ -269,9 +252,6 @@ namespace UNAM.PrimatesApi.Migrations
                     b.Property<DateTime>("RegisterDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("RolId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -281,8 +261,6 @@ namespace UNAM.PrimatesApi.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RolId");
 
                     b.HasIndex("UserTenantId");
 
@@ -305,7 +283,6 @@ namespace UNAM.PrimatesApi.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("TEXT");
 
@@ -316,10 +293,6 @@ namespace UNAM.PrimatesApi.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("MiddleName")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("NormalizedEmail")
@@ -352,7 +325,6 @@ namespace UNAM.PrimatesApi.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UserName")
-                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("TEXT");
 
@@ -451,19 +423,11 @@ namespace UNAM.PrimatesApi.Migrations
 
             modelBuilder.Entity("UNAM.PrimatesApi.Models.UserPrivilege", b =>
                 {
-                    b.HasOne("UNAM.PrimatesApi.Models.RolTenant", "Rol")
-                        .WithMany()
-                        .HasForeignKey("RolId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("UNAM.PrimatesApi.Models.UserTenant", "UserTenant")
                         .WithMany()
                         .HasForeignKey("UserTenantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Rol");
 
                     b.Navigation("UserTenant");
                 });

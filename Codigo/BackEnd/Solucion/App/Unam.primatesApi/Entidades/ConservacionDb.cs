@@ -16,9 +16,10 @@ namespace UNAM.PrimatesApi.Entidades
 
         
         public DbSet<UserPrivilege> Privileges { get; set; }
-        public DbSet<Document> Documents { get; set; }
-        public DbSet<RolTenant> RolTenants { get; set; }
+        public DbSet<Document> Documents { get; set; }        
         public DbSet<BillSettings> BillSettings { get; set; }
         public DbSet<BillHistory> BillHistory { get; set; }
+
+        
     }
 }

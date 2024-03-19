@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Desarrollo\\Titulaci\u00F3n\\Repo\\Monos-Mexico\\Codigo\\BackEnd\\Solucion\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3E56F071-2AF8-4329-85A0-340AC078CEA8}|App\\Unam.primatesApi\\UNAM.PrimatesApi.csproj|d:\\desarrollo\\titulaci\u00F3n\\repo\\monos-mexico\\codigo\\backend\\solucion\\app\\unam.primatesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E56F071-2AF8-4329-85A0-340AC078CEA8}|App\\Unam.primatesApi\\UNAM.PrimatesApi.csproj|solutionrelative:app\\unam.primatesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E56F071-2AF8-4329-85A0-340AC078CEA8}|App\\Unam.primatesApi\\UNAM.PrimatesApi.csproj|d:\\desarrollo\\titulaci\u00F3n\\repo\\monos-mexico\\codigo\\backend\\solucion\\app\\unam.primatesapi\\entidades\\conservaciondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E56F071-2AF8-4329-85A0-340AC078CEA8}|App\\Unam.primatesApi\\UNAM.PrimatesApi.csproj|solutionrelative:app\\unam.primatesapi\\entidades\\conservaciondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConservacionDb.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\Titulaci\u00F3n\\Repo\\Monos-Mexico\\Codigo\\BackEnd\\Solucion\\App\\Unam.primatesApi\\Entidades\\ConservacionDb.cs",
-              "RelativeDocumentMoniker": "App\\Unam.primatesApi\\Entidades\\ConservacionDb.cs",
-              "ToolTip": "D:\\Desarrollo\\Titulaci\u00F3n\\Repo\\Monos-Mexico\\Codigo\\BackEnd\\Solucion\\App\\Unam.primatesApi\\Entidades\\ConservacionDb.cs",
-              "RelativeToolTip": "App\\Unam.primatesApi\\Entidades\\ConservacionDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T03:35:33.207Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -68,19 +46,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\Titulaci\u00F3n\\Repo\\Monos-Mexico\\Codigo\\BackEnd\\Solucion\\App\\Unam.primatesApi\\Program.cs",
-              "RelativeDocumentMoniker": "App\\Unam.primatesApi\\Program.cs",
-              "ToolTip": "D:\\Desarrollo\\Titulaci\u00F3n\\Repo\\Monos-Mexico\\Codigo\\BackEnd\\Solucion\\App\\Unam.primatesApi\\Program.cs",
-              "RelativeToolTip": "App\\Unam.primatesApi\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T03:32:05.924Z",
-              "EditorCaption": ""
             }
           ]
         }

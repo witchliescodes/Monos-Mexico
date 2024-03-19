@@ -10,6 +10,8 @@ import { PrimatesComponent } from './componentes/primates/primates.component';
 import { GrupoComponent } from './componentes/grupo/grupo.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { ConectarseComponent } from './componentes/conectarse/conectarse.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 //import { AlianzasComponent } from './alianzas/alianzas.component';
 
 @NgModule({
@@ -24,8 +26,14 @@ import { ConectarseComponent } from './componentes/conectarse/conectarse.compone
     ConectarseComponent,
     //AlianzasComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports:
+    [BrowserModule,
+      AppRoutingModule,
+      FormsModule,
+      ReactiveFormsModule,
+      HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

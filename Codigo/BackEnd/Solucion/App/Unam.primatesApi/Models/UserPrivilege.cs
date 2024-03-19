@@ -10,9 +10,6 @@ namespace UNAM.PrimatesApi.Models
         [ForeignKey("UserId")]
         public string UserId { get; set; } = string.Empty;
         public UserTenant UserTenant { get; set; } = new UserTenant();
-        [ForeignKey("RolId")]
-        public EnumRole RolId { get; set; }
-        public RolTenant Rol { get; set; } = new RolTenant();
         [Required]
         public DateTime RegisterDate { get; set; }
         public DateTime? ExpirationDate { get; set; }
