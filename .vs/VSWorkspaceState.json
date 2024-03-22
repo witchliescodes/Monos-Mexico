@@ -2,12 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Codigo",
-    "\\Codigo\\Web",
-    "\\Codigo\\Web\\primate-web",
-    "\\Codigo\\Web\\primate-web\\src",
-    "\\Codigo\\Web\\primate-web\\src\\app",
-    "\\Codigo\\Web\\primate-web\\src\\app\\componentes"
+    "\\Codigo\\BackEnd",
+    "\\Codigo\\BackEnd\\Solucion"
   ],
-  "SelectedNode": "\\Codigo\\Web\\primate-web",
+  "SelectedNode": "\\Codigo\\BackEnd\\Solucion\\Solucion.sln",
   "PreviewInSolutionExplorer": false
 }
