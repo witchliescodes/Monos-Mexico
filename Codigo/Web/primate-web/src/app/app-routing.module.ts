@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'primates', component: PrimatesComponent },
-  { path: 'grupo', component: GrupoComponent },
+  { path: 'grupo', component: GrupoComponent},
   { path: 'registro', component: RegistroComponent },
   { path: 'conectarse', component: ConectarseComponent },
   //{ path: 'alianzas', component: AlianzasComponent },

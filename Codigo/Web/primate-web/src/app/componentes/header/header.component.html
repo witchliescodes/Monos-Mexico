@@ -1,31 +1,17 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home"
-            ><i class="fi fi-rr-house-chimney"></i>Inicio</a
-          >
+          <a class="nav-link active" aria-current="page" href="/home"><i class="fi fi-rr-house-chimney"></i>Inicio</a>
         </li>
         <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            ><i class="fi fi-rr-comment-info"></i>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+              class="fi fi-rr-comment-info"></i>
             Informaciones
           </a>
           <ul class="dropdown-menu">
@@ -34,13 +20,8 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            ><i class="fi fi-rr-comment-info"></i>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+              class="fi fi-rr-comment-info"></i>
             Servicios
           </a>
           <ul class="dropdown-menu">
@@ -48,15 +29,15 @@
             <li><a class="dropdown-item" href="/primates">Protocolos</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/registro"
-            ><i class="fi fi-rr-enter"></i>Registrarse</a
-          >
+        <li class="nav-item" *ngIf="!isAuthenticate()">
+          <a class="nav-link active" aria-current="page" href="/registro"><i class="fi fi-rr-enter"></i>Registrarse</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/conectarse"
-            ><i class="fi fi-rr-sign-in-alt"></i>Conectarse</a
-          >
+        <li class="nav-item" *ngIf="!isAuthenticate()">
+          <a class="nav-link active" aria-current="page" href="/conectarse"><i
+              class="fi fi-rr-sign-in-alt"></i>Conectarse</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthenticate()">
+          <a class="nav-link active" aria-current="page" href="#" (click)="logout()"><i class="fi fi-rr-sign-in-alt"></i>Cerrar sesión</a>
         </li>
       </ul>
     </div>
